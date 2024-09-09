@@ -1,0 +1,67 @@
+input[type="file"] {
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+
+  button{
+    background-color: bisque;
+    color: black;
+    border: none;
+    padding: 1rem 3rem;
+    font-weight: 600;
+    margin: 1rem 0rem ;
+    width: 250px;
+  }
+
+  #resultBox{
+    width:500px;
+  }
+
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height for vertical centering */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  input[type="file"],
+  button {
+    margin: 10px 0;
+    display: block;
+  }
+  
+  #resultBox {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    display: none; /* Hidden initially */
+  }
+  
+  #resultBox.success {
+    color: green;
+    border: 2px solid green;
+  }
+  
+  #resultBox.failed {
+    color: red;
+    border: 2px solid red;
+  }
+  
+  /* Center everything in a container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+
+  .button-flex{
+    display: flex;
+    gap: 10px;
+  }

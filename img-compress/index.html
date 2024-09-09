@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulk Image Compressor Made By "Siamur Mahin"</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Bulk Image Compressor</h1>
+    <p>Upload one or more images to compress them. If more than one image is uploaded, they will be zipped.</p>
+    
+    <div class="upload-section">
+      <input type="file" id="imageUpload" multiple accept="image/*">
+    </div>
+    
+
+    <div id="previewSection">
+      <div id="imagePreview"></div>
+    </div>
+    
+
+    <label for="compressionLevel">Compression Level: </label>
+    <input type="range" id="compressionLevel" min="0.5" max="1" step="0.05" value="0.9">
+    <span id="compressionValue">0.9</span>
+
+    <button id="compressButton">Compress Image(s)</button>
+
+    <div id="statusBox" class="status-box">Compression status will be shown here.</div>
+
+    <a id="downloadLink" download="Compressed by Mahin.zip" style="display: none;">Download Compressed Images</a>
+  </div>
+
+  <script src="https://stuk.github.io/jszip/dist/jszip.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
